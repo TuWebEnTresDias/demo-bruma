@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isla Bruma — Restaurante & Bar en Tigre</title>
+    <meta name="description" content="Isla Bruma: restaurante gourmet a orillas del Río Luján en Tigre. Gastronomía, degustaciones de vinos y eventos privados. Cruzá en lancha y descubrí una experiencia única.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Inter:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏝️</text></svg>">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="#hero" class="header__logo">
+                <span class="header__logo-text">Isla Bruma</span>
+            </a>
+            <nav class="header__nav" id="mainNav">
+                <a href="#experiencia" class="header__nav-link">La Experiencia</a>
+                <a href="#menu" class="header__nav-link">Menú</a>
+                <a href="#galeria" class="header__nav-link">Galería</a>
+                <a href="#momentos" class="header__nav-link">Momentos</a>
+                <a href="#reservar" class="header__nav-link header__nav-link--cta">Reservar</a>
+            </nav>
+            <button class="header__burger" id="burger" aria-label="Menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <a href="#experiencia" class="mobile-menu__link">La Experiencia</a>
+            <a href="#menu" class="mobile-menu__link">Menú</a>
+            <a href="#galeria" class="mobile-menu__link">Galería</a>
+            <a href="#momentos" class="mobile-menu__link">Momentos</a>
+            <a href="#historia" class="mobile-menu__link">Historia</a>
+            <a href="#reservar" class="mobile-menu__link mobile-menu__link--cta">Reservar Mesa</a>
+        </nav>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="https://thumbs.dreamstime.com/b/bar-y-restaurante-isla-bruma-en-el-delta-de-parana-cerca-tigre-argentina-febrero-taberna-aterrizaje-del-mesas-la-272975425.jpg"
+                 alt="Isla Bruma desde el río"
+                 class="hero__bg-img">
+        </div>
+        <div class="hero__overlay"></div>
+
+        <div class="hero__palm" aria-hidden="true">
+            <svg viewBox="0 0 400 700" xmlns="http://www.w3.org/2000/svg">
+                <path d="M195 690 Q190 550 192 420 Q193 350 195 280 Q197 240 200 210"
+                      stroke="currentColor" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.5"/>
+                <path d="M200 210 Q160 170 60 160 Q110 140 160 165 Q185 175 200 210" fill="currentColor" opacity="0.35"/>
+                <path d="M200 210 Q240 165 340 155 Q290 135 240 160 Q215 170 200 210" fill="currentColor" opacity="0.35"/>
+                <path d="M200 210 Q170 150 100 60 Q130 100 170 155 Q188 180 200 210" fill="currentColor" opacity="0.35"/>
+                <path d="M200 210 Q230 145 300 50 Q270 95 230 150 Q212 178 200 210" fill="currentColor" opacity="0.35"/>
+                <path d="M200 210 Q198 140 195 40 Q200 100 200 150 Q200 180 200 210" fill="currentColor" opacity="0.35"/>
+                <path d="M200 210 Q150 190 30 220 Q90 195 150 195 Q180 200 200 210" fill="currentColor" opacity="0.25"/>
+                <path d="M200 210 Q250 185 370 215 Q310 190 250 192 Q220 198 200 210" fill="currentColor" opacity="0.25"/>
+            </svg>
+        </div>
+
+        <div class="hero__content">
+            <p class="hero__tagline anim-hero">Tigre · Delta del Paraná</p>
+            <h1 class="hero__title">
+                <span class="hero__title-line anim-hero">Cruzá el río.</span>
+                <span class="hero__title-line anim-hero">Encontrá la bruma.</span>
+            </h1>
+            <p class="hero__subtitle anim-hero">Restaurante & bar a orillas del Río Luján. Gastronomía gourmet, degustación de vinos y la experiencia de cruzar en lancha para llegar a tu mesa.</p>
+            <div class="hero__cta anim-hero">
+                <a href="#menu" class="btn btn--primary">Ver el Menú</a>
+                <a href="https://wa.me/5491158055802?text=Hola%2C%20me%20gustar%C3%ADa%20hacer%20una%20reserva%20en%20Isla%20Bruma"
+                   class="btn btn--outline" target="_blank" rel="noopener">
+                    Reservar por WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="hero__scroll anim-hero">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== DIFERENCIALES ===== -->
+    <section class="differentials" id="diferenciales">
+        <div class="container">
+            <div class="differentials__grid">
+
+                <div class="differential reveal">
+                    <div class="differential__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 36 Q24 30 40 36"/>
+                            <path d="M8 36 Q24 42 40 36"/>
+                            <line x1="8" y1="36" x2="8" y2="32"/>
+                            <line x1="40" y1="36" x2="40" y2="32"/>
+                            <path d="M16 32 L24 16 L32 32"/>
+                            <line x1="20" y1="24" x2="28" y2="24"/>
+                        </svg>
+                    </div>
+                    <h3 class="differential__title">La Lancha</h3>
+                    <p class="differential__text">El camino a tu mesa cruza el Río Luján. Un viaje gratis que te separa de la ciudad y te acerca al sabor.</p>
+                </div>
+
+                <div class="differential reveal">
+                    <div class="differential__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 38 L14 22 Q14 16 20 14 L24 13 L28 14 Q34 16 34 22 L34 38"/>
+                            <path d="M10 38 L38 38"/>
+                            <path d="M18 22 L30 22"/>
+                            <circle cx="24" cy="30" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="differential__title">Cocina Gourmet</h3>
+                    <p class="differential__text">Platos que sorprenden con ingredientes de primera y técnicas que respetan el producto. De bife de chorizo a degustaciones.</p>
+                </div>
+
+                <div class="differential reveal">
+                    <div class="differential__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M24 6 Q18 6 16 12 Q10 14 12 22 Q8 26 12 30 Q10 36 16 38 Q18 44 24 44 Q30 44 32 38 Q38 36 36 30 Q40 26 36 22 Q38 14 32 12 Q30 6 24 6Z"/>
+                            <path d="M24 14 L24 34"/>
+                            <path d="M18 20 Q24 26 30 20"/>
+                        </svg>
+                    </div>
+                    <h3 class="differential__title">El Lugar</h3>
+                    <p class="differential__text">Mesas bajo los árboles, vista al río y pileta de uso exclusivo. Un refugio natural a minutos del centro de Tigre.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LA EXPERIENCIA ===== -->
+    <section class="experience" id="experiencia">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Cómo funciona</span>
+                <h2 class="section-title">La Experiencia</h2>
+                <p class="section-subtitle">No es solo un restaurante. Es un viaje que empieza en la costa y termina en tu mesa.</p>
+            </div>
+            <div class="experience__steps">
+                <div class="experience__step reveal">
+                    <span class="experience__step-num">01</span>
+                    <div class="experience__step-content">
+                        <h3>Reservá tu mesa</h3>
+                        <p>Elegí el día, la hora y la cantidad de personas. Te esperamos en el muelle frente al Museo de la Armada de Tigre.</p>
+                    </div>
+                </div>
+                <div class="experience__step reveal">
+                    <span class="experience__step-num">02</span>
+                    <div class="experience__step-content">
+                        <h3>Cruzá en lancha</h3>
+                        <p>Nuestra lancha te cruza gratis por el Río Luján. Un viaje de minutos que te lleva a otro mundo.</p>
+                    </div>
+                </div>
+                <div class="experience__step reveal">
+                    <span class="experience__step-num">03</span>
+                    <div class="experience__step-content">
+                        <h3>Elegí tu espacio</h3>
+                        <p>Mesas al aire libre bajo los árboles o zona cerrada con aire acondicionado. Vos decidís cómo querés disfrutar.</p>
+                    </div>
+                </div>
+                <div class="experience__step reveal">
+                    <span class="experience__step-num">04</span>
+                    <div class="experience__step-content">
+                        <h3>Disfrutá del sabor</h3>
+                        <p>Cocina gourmet, carta de vinos seleccionada y tragos que acompañan cada momento. Todo con vista al río.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MENÚ ===== -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Nuestra carta</span>
+                <h2 class="section-title">Menú</h2>
+                <p class="section-subtitle">Una selección curada de lo mejor de nuestra cocina. Platos que valen el cruce.</p>
+            </div>
+
+            <div class="menu__tabs reveal">
+                <button class="menu__tab active" data-tab="entradas">Entradas</button>
+                <button class="menu__tab" data-tab="principales">Principales</button>
+                <button class="menu__tab" data-tab="postres">Postres</button>
+                <button class="menu__tab" data-tab="bebidas">Bebidas & Vinos</button>
+            </div>
+
+            <div class="menu__categories">
+
+                <div class="menu__category active" data-category="entradas">
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Burrata con Tomates Cherry Confitados</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$13.000</span>
+                        </div>
+                        <p class="menu__item-desc">Burrata cremosa, tomates cherry confitados al horno, albahaca fresca y reducción de balsámico.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Empanadas de Vacío</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$11.500</span>
+                        </div>
+                        <p class="menu__item-desc">4 unidades. Masa casera rellena de vacío deshebrado, cebolla caramelizada y huevo duro. Grandes y jugosas.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Tartare de Atún</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$15.500</span>
+                        </div>
+                        <p class="menu__item-desc">Atún fresco marinado en sésamo y jengibre, con aguacate, crispy de poro y aceite de sésamo tostado.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Croquetas de Jamón Serrano</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$12.000</span>
+                        </div>
+                        <p class="menu__item-desc">6 unidades. Croquetas cremosas por dentro, crujientes por fuera, con salsa picante de la casa.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Provoleta a la Brasa</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$10.500</span>
+                        </div>
+                        <p class="menu__item-desc">Provoleta gratinada con orégano, tomates secos y un toque de ají molido. Simple y perfecta.</p>
+                    </div>
+                </div>
+
+                <div class="menu__category" data-category="principales">
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Bife de Chorizo a Punto</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$32.000</span>
+                        </div>
+                        <p class="menu__item-desc">Corte premium de 400g, cocinado a las brasas. Acompañado de papas al horno con romero y ensalada verde.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Salmón al Miso</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$35.000</span>
+                        </div>
+                        <p class="menu__item-desc">Filete de salmón glaseado con miso blanco, arroz jazmín y vegetales de estación al vapor.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Risotto de Hongos</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$26.000</span>
+                        </div>
+                        <p class="menu__item-desc">Arroz arborio cremoso con mix de hongos silvestres, parmesano añejo y aceite de trufa negra.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Milanesa Napolitana</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$27.500</span>
+                        </div>
+                        <p class="menu__item-desc">Suprema de pollo empanada, cubierta con salsa casera, mozzarella fundida y orégano. Con papas fritas.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Parrillada Isla Bruma</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$58.000</span>
+                        </div>
+                        <p class="menu__item-desc">Para compartir. Cortes variados de la casa, chorizo, morcilla y pollo. Con chimichurri y guarniciones.</p>
+                    </div>
+                </div>
+
+                <div class="menu__category" data-category="postres">
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Tiramisú de la Casa</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$10.000</span>
+                        </div>
+                        <p class="menu__item-desc">Capas de bizcochos de café, crema de mascarpone y cacao amargo. Receta de la casa, siempre fresco.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Panacota de Coco</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$9.500</span>
+                        </div>
+                        <p class="menu__item-desc">Textura sedosa de coco con coulis de frutos rojos frescos y hojas de menta.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Brownie con Helado Artesanal</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$9.000</span>
+                        </div>
+                        <p class="menu__item-desc">Brownie tibiente de chocolate amargo con una bola de helado de vainilla y salsa de dulce de leche.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Lemon Pie</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$10.500</span>
+                        </div>
+                        <p class="menu__item-desc">Base crocante, crema de limón suave y merengue italiano dorado a la llama.</p>
+                    </div>
+                </div>
+
+                <div class="menu__category" data-category="bebidas">
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Selección de 3 Copas</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$18.000</span>
+                        </div>
+                        <p class="menu__item-desc">Degustación de 3 vinos de nuestra carta: un blanco, un rosado y un tinto. Ideal para descubrir.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Gin Tónica Premium</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$13.500</span>
+                        </div>
+                        <p class="menu__item-desc">Gin artesanal argentino, tónica premium, botánicos de estación y twist de pomelo.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Spritz Isla Bruma</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$12.000</span>
+                        </div>
+                        <p class="menu__item-desc">Nuestra versión del clásico. Aperol, prosecco, soda y un toque de naranja fresca.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Limonada de la Casa</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$6.500</span>
+                        </div>
+                        <p class="menu__item-desc">Limones frescos, hierbabuena y un toque de jengibre. Refrescante y natural.</p>
+                    </div>
+                    <div class="menu__item reveal">
+                        <div class="menu__item-header">
+                            <h4 class="menu__item-name">Maridaje Isla Bruma</h4>
+                            <span class="menu__item-dots"></span>
+                            <span class="menu__item-price">$35.000</span>
+                        </div>
+                        <p class="menu__item-desc">5 copas seleccionadas por nuestro sommelier, maridadas con una mini degustación de la casa.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu__cta reveal">
+                <p>¿Querés ver la carta completa o consultás por vinos y eventos?</p>
+                <a href="https://wa.me/5491158055802?text=Hola%2C%20quisiera%20consultar%20por%20la%20carta%20completa%20de%20Isla%20Bruma"
+                   class="btn btn--primary" target="_blank" rel="noopener">
+                    Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PLATO ESTRELLA ===== -->
+    <section class="signature" id="platofuerte">
+        <div class="signature__bg">
+            <img src="https://vivitigre.gob.ar/wp-content/uploads/2022/10/WhatsApp-Image-2022-10-24-at-16.41.55-1.jpeg"
+                 alt="Bife de chorizo a la brasa"
+                 class="signature__img" loading="lazy">
+        </div>
+        <div class="signature__overlay"></div>
+        <div class="container">
+            <div class="signature__content reveal">
+                <span class="section-tag section-tag--light">Especialidad de la casa</span>
+                <h2 class="signature__title">Bife de Chorizo<br>a Punto</h2>
+                <div class="signature__divider"></div>
+                <p class="signature__text">400 gramos de corte premium, cocinado a las brasas con la paciencia que merece. Acompañado de papas al horno con romero y ensalada verde del día. Es simple. Es perfecto. Es por eso que volvés.</p>
+                <span class="signature__price">$32.000</span>
+                <a href="https://wa.me/5491158055802?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20y%20pedir%20el%20Bife%20de%20Chorizo%20de%20Isla%20Bruma"
+                   class="btn btn--accent" target="_blank" rel="noopener">
+                    Reservar para probarlo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALERÍA ===== -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Momentos</span>
+                <h2 class="section-title">Galería</h2>
+                <p class="section-subtitle">Así se vive Isla Bruma. Cada imagen cuenta una parte de la historia.</p>
+            </div>
+            <div class="gallery__grid">
+                <div class="gallery__item gallery__item--wide reveal">
+                    <img src="https://thumbs.dreamstime.com/b/bar-y-restaurante-isla-bruma-en-el-delta-de-parana-cerca-tigre-argentina-febrero-taberna-aterrizaje-del-mesas-la-272975425.jpg"
+                         alt="Isla Bruma desde el río" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span>La vista desde el río</span>
+                    </div>
+                </div>
+                <div class="gallery__item reveal">
+                    <img src="https://vivitigre.gob.ar/wp-content/uploads/2022/10/WhatsApp-Image-2022-10-24-at-16.41.55-1.jpeg"
+                         alt="Cocina gourmet en Isla Bruma" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span>Cocina que sorprende</span>
+                    </div>
+                </div>
+                <div class="gallery__item reveal">
+                    <img src="https://vivitigre.gob.ar/wp-content/uploads/2022/10/WhatsApp-Image-2022-10-24-at-16.41.48.jpeg"
+                         alt="Mesas en Isla Bruma" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span>Mesas bajo los árboles</span>
+                    </div>
+                </div>
+                <div class="gallery__item reveal">
+                    <img src="https://vivitigre.gob.ar/wp-content/uploads/2022/10/WhatsApp-Image-2022-10-24-at-16.41.52-1.jpeg"
+                         alt="Ambiente Isla Bruma" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span>El ambiente Isla Bruma</span>
+                    </div>
+                </div>
+                <div class="gallery__item gallery__item--wide reveal">
+                    <img src="https://vivitigre.gob.ar/wp-content/uploads/2022/10/WhatsApp-Image-2022-10-24-at-16.41.58.jpeg"
+                         alt="Exterior de Isla Bruma" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span>Un refugio en el delta</span>
+                    </div>
+                </div>
+                <div class="gallery__item reveal">
+                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&h=600&fit=crop&q=80"
+                         alt="Degustación de vinos" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span>Degustación de vinos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIOS ===== -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Lo que dicen</span>
+                <h2 class="section-title">Reseñas</h2>
+                <div class="testimonials__rating">
+                    <span class="testimonials__rating-num">4.2</span>
+                    <div class="testimonials__stars-wrap">
+                        <div class="testimonials__stars">★★★★<span class="testimonials__star-half">★</span></div>
+                        <span class="testimonials__rating-count">basado en 365 reseñas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonial reveal">
+                    <div class="testimonial__header">
+                        <div class="testimonial__avatar">CM</div>
+                        <div>
+                            <h4 class="testimonial__name">Carolina M.</h4>
+                            <span class="testimonial__date">hace 3 semanas</span>
+                        </div>
+                    </div>
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text">"Cruzar en lancha para llegar es una experiencia mágica. La comida estuvo increíble y la vista al río te hace olvidar que existe el mundo afuera. Volveremos sin dudas."</p>
+                </div>
+                <div class="testimonial reveal">
+                    <div class="testimonial__header">
+                        <div class="testimonial__avatar">MP</div>
+                        <div>
+                            <h4 class="testimonial__name">Martín P.</h4>
+                            <span class="testimonial__date">hace 1 mes</span>
+                        </div>
+                    </div>
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text">"Fuimos a celebrar nuestro aniversario y fue todo perfecto. El bife de chorizo es espectacular, la atención de primer nivel y el lugar tiene una onda que no encontrás en otro lado de Tigre."</p>
+                </div>
+                <div class="testimonial reveal">
+                    <div class="testimonial__header">
+                        <div class="testimonial__avatar">SR</div>
+                        <div>
+                            <h4 class="testimonial__name">Sebastián R.</h4>
+                            <span class="testimonial__date">hace 2 meses</span>
+                        </div>
+                    </div>
+                    <div class="testimonial__stars">★★★★☆</div>
+                    <p class="testimonial__text">"Un lugar único en Tigre. La carta no es enorme pero todo lo que probamos estuvo excelente. Los tragos son algo caros pero valen la pena por el ambiente y la experiencia del cruce."</p>
+                </div>
+                <div class="testimonial reveal">
+                    <div class="testimonial__header">
+                        <div class="testimonial__avatar">LF</div>
+                        <div>
+                            <h4 class="testimonial__name">Luciana F.</h4>
+                            <span class="testimonial__date">hace 2 meses</span>
+                        </div>
+                    </div>
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text">"Hermosa experiencia con amigos. Cruzar en lancha gratis, comer a orillas del río bajo los árboles... El propietario Mauro hace que todo sea especial. Súper recomendable."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MOMENTOS ===== -->
+    <section class="moments" id="momentos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Encontrá tu momento</span>
+                <h2 class="section-title">Cada momento tiene su Isla</h2>
+            </div>
+            <div class="moments__grid">
+                <div class="moment reveal">
+                    <div class="moment__image">
+                        <img src="https://vivitigre.gob.ar/wp-content/uploads/2022/10/WhatsApp-Image-2022-10-24-at-16.41.58.jpeg"
+                             alt="Almuerzo en Isla Bruma" loading="lazy">
+                    </div>
+                    <div class="moment__content">
+                        <span class="moment__time">Lun — Vie · 12:00 – 18:00</span>
+                        <h3 class="moment__title">Almuerzo al Río</h3>
+                        <p class="moment__text">La brisa del Luján, un bife a la brasa y el sonido del agua. El almuerzo que la oficina nunca te va a poder dar.</p>
+                    </div>
+                </div>
+                <div class="moment reveal">
+                    <div class="moment__image">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&h=600&fit=crop&q=80"
+                             alt="Tarde de tragos" loading="lazy">
+                    </div>
+                    <div class="moment__content">
+                        <span class="moment__time">Sáb · 12:00 – 18:00</span>
+                        <h3 class="moment__title">Tarde con Amigos</h3>
+                        <p class="moment__text">Spritz, croquetas y buena compañía. Los sábados en Isla Bruma se disfrutan en modo lento, a orillas del agua.</p>
+                    </div>
+                </div>
+                <div class="moment reveal">
+                    <div class="moment__image">
+                        <img src="https://vivitigre.gob.ar/wp-content/uploads/2022/10/WhatsApp-Image-2022-10-24-at-16.41.48.jpeg"
+                             alt="Cena bajo las estrellas" loading="lazy">
+                    </div>
+                    <div class="moment__content">
+                        <span class="moment__time">Sáb · 18:00 – 02:00</span>
+                        <h3 class="moment__title">Cena bajo las Estrellas</h3>
+                        <p class="moment__text">Reservá para una velada especial. Llegá con lancha, salí con una historia que contar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HISTORIA Y EQUIPO ===== -->
+    <section class="story" id="historia">
+        <div class="container">
+            <div class="story__grid">
+                <div class="story__text reveal">
+                    <span class="section-tag">Nuestra historia</span>
+                    <h2 class="section-title section-title--left">Donde el río<br>se convierte en camino</h2>
+                    <p>Isla Bruma nació de una idea simple pero poderosa: que la comida siempre sabe mejor cuando tenés que cruzar el río para llegar. Ubicado frente al Museo de la Armada de Tigre, en la costa del Río Luján, este espacio nació para ser un refugio.</p>
+                    <p>Nuestro fundador, <strong>Mauro</strong>, imaginó un lugar donde el viaje fuera parte de la experiencia. Donde cruzar en lancha no fuera un obstáculo, sino el momento en que la ciudad se queda atrás y la brisa del delta te da la bienvenida.</p>
+                    <p>Hoy, Isla Bruma es más que un restaurante. Es un destino donde la cocina gourmet, la carta de vinos y la naturaleza se encuentran para crear algo que no encontrás en ningún otro lado de Tigre.</p>
+                </div>
+                <div class="story__team reveal">
+                    <h3 class="story__team-title">El equipo</h3>
+                    <div class="story__member">
+                        <div class="story__member-avatar">M</div>
+                        <div>
+                            <h4>Mauro</h4>
+                            <span>Fundador</span>
+                        </div>
+                    </div>
+                    <div class="story__member">
+                        <div class="story__member-avatar">L</div>
+                        <div>
+                            <h4>Luciano</h4>
+                            <span>Jefe de Cocina</span>
+                        </div>
+                    </div>
+                    <div class="story__member">
+                        <div class="story__member-avatar">V</div>
+                        <div>
+                            <h4>Valentina</h4>
+                            <span>Sommelier</span>
+                        </div>
+                    </div>
+                    <blockquote class="story__quote">
+                        <p>"La lancha no es un obstáculo. Es la antesala de la experiencia."</p>
+                        <cite>— Mauro, fundador</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRENSA ===== -->
+    <section class="press" id="prensa">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Menciones</span>
+                <h2 class="section-title">Lo que dicen de nosotros</h2>
+            </div>
+            <div class="press__grid">
+                <div class="press__quote reveal">
+                    <p>"Isla Bruma es la prueba de que el mejor restaurante de Tigre no está en Tigre… está en una isla, al otro lado del río."</p>
+                    <span class="press__source">— Guía Oleo, 2025</span>
+                </div>
+                <div class="press__quote reveal">
+                    <p>"El cruce en lancha convierte una cena en una aventura. Pocos lugares en Buenos Aires pueden decir lo mismo."</p>
+                    <span class="press__source">— Time Out Buenos Aires</span>
+                </div>
+                <div class="press__quote reveal">
+                    <p>"Gastronomía de primer nivel en un entorno que parece sacado de un sueño. El bife de chorizo es imperdible."</p>
+                    <span class="press__source">— Infobae Gastronomía</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESERVA ===== -->
+    <section class="reservation" id="reservar">
+        <div class="container">
+            <div class="reservation__grid">
+                <div class="reservation__info reveal">
+                    <span class="section-tag">Reservá tu experiencia</span>
+                    <h2 class="section-title section-title--left">Reservar Mesa</h2>
+                    <p>Completá el formulario y te contactamos por WhatsApp para confirmar tu reserva. Recordá que el acceso es por lancha desde el muelle frente al Museo de la Armada.</p>
+                    <div class="reservation__details">
+                        <div class="reservation__detail">
+                            <span class="reservation__detail-label">Dirección</span>
+                            <span>Paseo Victorica 498, B1648 Tigre</span>
+                        </div>
+                        <div class="reservation__detail">
+                            <span class="reservation__detail-label">Acceso</span>
+                            <span>Lancha gratuita desde el muelle</span>
+                        </div>
+                        <div class="reservation__detail">
+                            <span class="reservation__detail-label">WhatsApp</span>
+                            <a href="tel:+5491158055802">011 5805-5802</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation__form-wrap reveal">
+                    <form class="reservation__form" id="reservationForm">
+                        <div class="form-group">
+                            <label for="resName">Nombre completo</label>
+                            <input type="text" id="resName" name="name" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="resPhone">Teléfono</label>
+                            <input type="tel" id="resPhone" name="phone" required placeholder="Ej: 11 5555-1234">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="resDate">Fecha</label>
+                                <input type="date" id="resDate" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="resPeople">Personas</label>
+                                <select id="resPeople" name="people" required>
+                                    <option value="">Cantidad</option>
+                                    <option>1 persona</option>
+                                    <option>2 personas</option>
+                                    <option>3 personas</option>
+                                    <option>4 personas</option>
+                                    <option>5 personas</option>
+                                    <option>6 personas</option>
+                                    <option>7+ personas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="resNotes">Anotaciones <span class="form-optional">(opcional)</span></label>
+                            <textarea id="resNotes" name="notes" rows="3" placeholder="¿Alguna preferencia, alergia o celebración?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            Confirmar por WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="footer__logo">Isla Bruma</span>
+                    <p class="footer__tagline">Restaurante & bar a orillas del Río Luján, Tigre.</p>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/islabruma/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="5"/>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4>Visitá</h4>
+                    <p>Paseo Victorica 498<br>B1648 Tigre, Buenos Aires</p>
+                    <p class="footer__small">Acceso por lancha gratuita desde el muelle frente al Museo de la Armada</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Horarios</h4>
+                    <p>Lunes: <strong>Cerrado</strong></p>
+                    <p>Martes: 10:00 – 18:00</p>
+                    <p>Mié — Vie: 12:00 – 18:00</p>
+                    <p>Sábado: 12:00 – 02:00</p>
+                    <p>Domingo: 12:00 – 18:00</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Contacto</h4>
+                    <p><a href="tel:+5491158055802">011 5805-5802</a></p>
+                    <p><a href="https://www.instagram.com/islabruma/" target="_blank" rel="noopener">@islabruma</a></p>
+                    <a href="https://wa.me/5491158055802?text=Hola%2C%20tengo%20una%20consulta%20sobre%20Isla%20Bruma" class="btn btn--primary btn--sm" target="_blank" rel="noopener" style="margin-top: 1rem;">WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer__map">
+                <iframe
+                    src="https://maps.google.com/maps?q=Paseo+Victorica+498+Tigre+Buenos+Aires&output=embed"
+                    width="100%"
+                    height="350"
+                    style="border:0;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Isla Bruma. Todos los derechos reservados.</p>
+                <a href="https://tuweben3dias.com" target="_blank" rel="noopener" class="footer__credit">tuweben3dias.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== WHATSAPP FLOAT ===== -->
+    <a href="https://wa.me/5491158055802?text=Hola%2C%20quiero%20hacer%20una%20consulta%20sobre%20Isla%20Bruma"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener"
+       aria-label="Contactar por WhatsApp"
+       id="whatsappFloat">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="./script.js"></script>
+</body>
+</html>
