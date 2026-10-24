@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const encodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
-            window.open(whatsappUrl, '_blank', 'noopener');
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
         });
     }
 

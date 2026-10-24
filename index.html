@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="base-uri 'self'; object-src 'none'; form-action 'none'">
+<script src="site-security.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isla Bruma — Restaurante & Bar en Tigre</title>
@@ -81,7 +85,7 @@
             <div class="hero__cta anim-hero">
                 <a href="#menu" class="btn btn--primary">Ver el Menú</a>
                 <a href="https://wa.me/5491158055802?text=Hola%2C%20me%20gustar%C3%ADa%20hacer%20una%20reserva%20en%20Isla%20Bruma"
-                   class="btn btn--outline" target="_blank" rel="noopener">
+                   class="btn btn--outline" target="_blank" rel="noopener noreferrer">
                     Reservar por WhatsApp
                 </a>
             </div>
@@ -370,7 +374,7 @@
             <div class="menu__cta reveal">
                 <p>¿Querés ver la carta completa o consultás por vinos y eventos?</p>
                 <a href="https://wa.me/5491158055802?text=Hola%2C%20quisiera%20consultar%20por%20la%20carta%20completa%20de%20Isla%20Bruma"
-                   class="btn btn--primary" target="_blank" rel="noopener">
+                   class="btn btn--primary" target="_blank" rel="noopener noreferrer">
                     Consultar por WhatsApp
                 </a>
             </div>
@@ -393,7 +397,7 @@
                 <p class="signature__text">400 gramos de corte premium, cocinado a las brasas con la paciencia que merece. Acompañado de papas al horno con romero y ensalada verde del día. Es simple. Es perfecto. Es por eso que volvés.</p>
                 <span class="signature__price">$32.000</span>
                 <a href="https://wa.me/5491158055802?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20y%20pedir%20el%20Bife%20de%20Chorizo%20de%20Isla%20Bruma"
-                   class="btn btn--accent" target="_blank" rel="noopener">
+                   class="btn btn--accent" target="_blank" rel="noopener noreferrer">
                     Reservar para probarlo
                 </a>
             </div>
@@ -686,7 +690,7 @@
                             <label for="resNotes">Anotaciones <span class="form-optional">(opcional)</span></label>
                             <textarea id="resNotes" name="notes" rows="3" placeholder="¿Alguna preferencia, alergia o celebración?"></textarea>
                         </div>
-                        <button type="submit" class="btn btn--primary btn--full">
+                        <button type="submit" class="btn btn--primary btn--full" disabled data-security-submit>
                             Confirmar por WhatsApp
                         </button>
                     </form>
@@ -703,7 +707,7 @@
                     <span class="footer__logo">Isla Bruma</span>
                     <p class="footer__tagline">Restaurante & bar a orillas del Río Luján, Tigre.</p>
                     <div class="footer__social">
-                        <a href="https://www.instagram.com/islabruma/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link">
+                        <a href="https://www.instagram.com/islabruma/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="2" width="20" height="20" rx="5"/>
                                 <circle cx="12" cy="12" r="5"/>
@@ -728,8 +732,8 @@
                 <div class="footer__col">
                     <h4>Contacto</h4>
                     <p><a href="tel:+5491158055802">011 5805-5802</a></p>
-                    <p><a href="https://www.instagram.com/islabruma/" target="_blank" rel="noopener">@islabruma</a></p>
-                    <a href="https://wa.me/5491158055802?text=Hola%2C%20tengo%20una%20consulta%20sobre%20Isla%20Bruma" class="btn btn--primary btn--sm" target="_blank" rel="noopener" style="margin-top: 1rem;">WhatsApp</a>
+                    <p><a href="https://www.instagram.com/islabruma/" target="_blank" rel="noopener noreferrer">@islabruma</a></p>
+                    <a href="https://wa.me/5491158055802?text=Hola%2C%20tengo%20una%20consulta%20sobre%20Isla%20Bruma" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" style="margin-top: 1rem;">WhatsApp</a>
                 </div>
             </div>
             <div class="footer__map">
@@ -745,7 +749,7 @@
             </div>
             <div class="footer__bottom">
                 <p>&copy; 2026 Isla Bruma. Todos los derechos reservados.</p>
-                <a href="https://tuweben3dias.com" target="_blank" rel="noopener" class="footer__credit">tuweben3dias.com</a>
+                <a href="https://tuweben3dias.com" target="_blank" rel="noopener noreferrer" class="footer__credit">tuweben3dias.com</a>
             </div>
         </div>
     </footer>
@@ -754,7 +758,7 @@
     <a href="https://wa.me/5491158055802?text=Hola%2C%20quiero%20hacer%20una%20consulta%20sobre%20Isla%20Bruma"
        class="whatsapp-float"
        target="_blank"
-       rel="noopener"
+       rel="noopener noreferrer"
        aria-label="Contactar por WhatsApp"
        id="whatsappFloat">
         <svg viewBox="0 0 24 24" fill="currentColor">
@@ -762,6 +766,6 @@
         </svg>
     </a>
 
-    <script src="./script.js"></script>
+    <script data-site-script src="./script.js"></script>
 </body>
 </html>
